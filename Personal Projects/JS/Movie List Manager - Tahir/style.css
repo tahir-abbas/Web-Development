@@ -1,0 +1,66 @@
+.ui {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem 5rem;
+  gap: 1rem;
+  max-width: 700px;
+  margin: auto;
+}
+.btns {
+  display: flex;
+  justify-content: space-between;
+}
+button {
+  padding: 0.5rem 1rem;
+  width: 30%;
+  border: none;
+  font-size: 1.5rem;
+  border-radius: 20px;
+  color: white;
+  transition: all 200ms;
+}
+button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.add {
+  background-color: rgb(32, 189, 27);
+  box-shadow: 0px 10px 30px 5px rgba(46, 212, 12, 0.349);
+}
+.del {
+  background-color: rgb(221, 32, 32);
+  box-shadow: 0px 10px 30px 5px rgba(197, 10, 10, 0.349);
+}
+
+input,
+select {
+  font-size: 1.1rem;
+  padding: 1rem;
+  border: 2px solid rgb(32, 189, 27);
+  border-radius: 20px;
+}
+.mainTitle {
+  text-align: center;
+}
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 1rem;
+  width: 80%;
+  margin: auto;
+  padding-top: 2rem;
+}
+.movie {
+  background-color: rgb(3, 49, 87);
+  border-radius: 10px;
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+  width: 200px;
+  box-shadow: 0px 5px 15px 10px rgba(0, 0, 0, 0.123);
+}
+.mName {
+  text-overflow: clip;
+}

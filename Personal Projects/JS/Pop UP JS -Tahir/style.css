@@ -1,0 +1,75 @@
+body {
+  background-color: rgb(32, 32, 47);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.submit {
+  padding: 1rem;
+  font-size: 2rem;
+  background-color: #4caf50;
+  border: 1px solid rgb(203, 203, 203);
+  border-radius: 5%;
+  width: 10rem;
+  font-weight: bold;
+  color: white;
+  opacity: 0.8;
+  transition: all 500ms;
+}
+.submit:hover {
+  cursor: pointer;
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.popup {
+  position: absolute;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  width: 300px;
+  gap: 20px;
+  border-radius: 5%;
+  border: 1px solid gainsboro;
+  z-index: 100;
+  animation-name: slide;
+  animation-duration: 0.2s;
+  animation-timing-function: ease-in-out;
+  display: none;
+}
+.btn button {
+  padding: 0.5rem 2rem;
+  font-size: 2rem;
+  background-color: #4caf50;
+  border: 1px solid rgb(199, 199, 199);
+  border-radius: 8%;
+  color: white;
+  transition: all 500ms;
+  opacity: 0.8;
+}
+
+.btn button:hover {
+  opacity: 1;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+@keyframes slide {
+  0% {
+    top: -400px;
+    transform: scale(2);
+  }
+  100% {
+    top: 250px;
+    transform: scale(1);
+  }
+}

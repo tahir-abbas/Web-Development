@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="ui">
+      <input type="text" class="txt" placeholder="Movie name..." />
+      <input type="text" class="search" placeholder="Search Movie name..." />
+      <span class="helper"></span>
+
+      <div class="btns">
+        <button class="add">Add</button>
+        <button class="del">Delete</button>
+        <div class="s">
+          <label for="sort">Sort By:</label>
+          <select name="sort" id="sort">
+            <option value="del">Default</option>
+            <option value="asc">Ascending</option>
+            <option value="dsc">Descending</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <hr />
+
+    <h1 class="mainTitle">All The Movies</h1>
+    <hr />
+    <div class="movies"></div>
+    <script src="script.js"></script>
+  </body>
+</html>

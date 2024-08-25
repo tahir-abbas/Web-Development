@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.main {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 10px 10px;
+  width: 80%;
+  margin: auto;
+  height: 45vh;
+}
+.main > div {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main > div > p {
+  color: white;
+  font-size: 3rem;
+}
+
+.main > div:nth-child(odd) {
+  background-color: rgb(2, 2, 33);
+}

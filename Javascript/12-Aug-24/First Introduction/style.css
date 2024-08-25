@@ -1,0 +1,14 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+.btn {
+  padding: 0.6rem 2rem;
+  background-color: green;
+  color: white;
+  border: 1px solid rgb(127, 250, 26);
+  border-radius: 45px;
+}
